@@ -1,0 +1,35 @@
+name: hyperscanning_asd
+conda_env: ibn-asd/conda.yaml
+
+entry_points:
+  ibn:
+    parameters:
+      connectivity_estimator: string
+      actual_filename: string
+      shuffled_filename: string
+      chromophore: string
+
+    command: "python ibn-asd/ibn.py --connectivity_estimator {connectivity_estimator}
+                            --actual_filename {actual_filename}
+                            --shuffled_filename {shuffled_filename}
+                            --chromophore {chromophore}"
+  cv:
+    parameters:
+      embedding: string
+      classifier: string
+      estimator: string
+      local_path: path
+    command: "python ibn-asd/cv.py --embedding {embedding}
+                           --classifier {classifier}
+                           --estimator {estimator}
+                           --local_path {local_path}"
+  ood:
+    parameters:
+      embedding: string
+      model_source: string
+      estimator: string
+      local_path: path
+    command: "python ibn-asd/ood.py --embedding {embedding}
+                            --model_source {model_source}
+                            --estimator {estimator}
+                            --local_path {local_path}"
