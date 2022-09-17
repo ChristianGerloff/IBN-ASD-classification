@@ -1,0 +1,27 @@
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# VS directories
+.vs/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+conf/**
+
+# Tracking
+mlruns/**
+
+# Config
+poetry.lock
+
+# Data
+*.mat
+/data/**
+
+# Notes
+#*notes.md
+
+# Docker
+#Dockerfile
