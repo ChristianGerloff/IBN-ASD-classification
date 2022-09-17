@@ -1,0 +1,17 @@
+name: hyperscanning_asd
+channels:
+  - defaults
+dependencies:
+  - python=3.8.8
+  - pip
+  - pip:
+    - numpy == 1.22.3
+    - atlasreader == 0.1.2
+    - pyarrow == 7.0.0
+    - dask == 2022.5.0
+    - seaborn == 0.11.2
+    - ipykernel == 6.13.1
+    - pytest == 7.1.2
+    - mlflow == 1.26.1
+    - karateclub == 1.3.0
+    - scikit-optimize == 0.9.0
